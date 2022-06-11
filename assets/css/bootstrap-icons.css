@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "bootstrap-icons";
+  src: url("../fonts/bootstrap-icons.woff2") format("woff2");
+}
+
+.bi::before,
+[class^="bi-"]::before,
+[class*=" bi-"]::before {
+  display: inline-block;
+  font-family: bootstrap-icons !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: -.125em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bi-envelope-fill::before { content: "\f32c"; }
+.bi-telephone-fill::before { content: "\f5b4"; }
+.bi-brightness-alt-high-fill::before { content: "\f1cd"; }

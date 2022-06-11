@@ -1,0 +1,110 @@
+@font-face {
+  font-family: bootstrap-icons;
+  src: url(../fonts/bootstrap-icons.woff2);
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+h1, h2 {
+  font-weight: 700;
+}
+
+p, a {
+  font-family: 'Jost', sans-serif;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 150%;
+}
+
+a.btn, a.nav-link {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.lead {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+/* Navbar */
+.navbar-brand {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
+
+}
+
+.navbar {
+  transition: background 0.3s ease;
+}
+
+.navbar .nav a.nav-link {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.navbar.bg-none .nav a.nav-link {
+  text-shadow: 2px 2px #000000a1;
+}
+
+/* Navbar END */
+
+footer p, .text-grey {
+  color: #bcbcbc;
+}
+
+body {
+    background-color: #e4e4e0;
+}
+
+.bg-primary {
+    background-color: #1c231f !important;
+}
+
+.bg-none {
+  background: none;
+  background-color: unset !important;
+}
+
+.btn-primary {
+  background-color: #389844;
+  border-color: #ffffff54;
+}
+
+.btn-primary:hover {
+  background-color: #2d7637;
+  border-color: #4a9955;
+}
+
+.floor-plan-hover:hover {
+  cursor: pointer;
+}
+
+#house-svg-wrapper {
+  max-height: 300px;
+}
+
+#home {
+  padding-top: calc(3rem + 72px) !important;
+  background-image: url('../images/camping-banner.jpg');
+}
+
+.gx-6 {
+    --bs-gutter-x: 6rem;
+}
+
+/* Owl carousel slider */
+@media screen and (max-width: 767px) {
+  .owl-carousel .item > img {
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .owl-carousel .item > img {
+    height: 400px;
+  }
+}
