@@ -7,6 +7,5 @@ $(document).ready(function() {
     } else {
       $('#main-nav').removeClass('bg-primary').addClass('bg-none');
     }
-    console.log();
   })
 });

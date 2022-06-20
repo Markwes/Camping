@@ -5,20 +5,34 @@ $(document).ready(function() {
     table: ['#Table'],
     fridge: ['#Fridge'],
     stove: ['#Gas_stove'],
+    upstairs: ['#Bed1, #Bed2'],
   };
 
   $('.floor-plan-hover').on('mouseenter', function() {
     hoverElement = $(this).data('hover');
+    var isFloorUpstairs = (hoverElement == 'upstairs');
+    switchFloor(isFloorUpstairs);
     highlightElements(floorPlan[hoverElement], true);
   });
 
   $('.floor-plan-hover').on('mouseleave', function() {
+    switchFloor(false);
     highlightElements(floorPlan[hoverElement], false);
   });
 
 });
 
-function highlightElements(elements, isHovering) {
+function switchFloor(isFloorUpstairs) {
+    if (isFloorUpstairs) {
+      $('#floor-1').addClass('hide-svg');
+      $('#floor-2').removeClass('hide-svg');
+    } else {
+      $('#floor-2').addClass('hide-svg');
+      $('#floor-1').removeClass('hide-svg');
+    }
+}
+
+function highlightElements(elements, isHovering, switchFloor) {
     let highlightColor = (isHovering ? '#389844' : 'none');
 
     elements.forEach(element => {
